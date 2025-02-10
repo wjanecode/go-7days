@@ -29,7 +29,7 @@ func TestCache_Add(t *testing.T) {
 		log.Printf("del success %v => %v ", key, v)
 	})
 	k1 := "k1"
-	test1 := []string{"WOO", "JACK"}
+	test1 := StringSlice([]string{"WOO", "JACK"})
 	log.Printf("test1 length %v", test1.Len())
 	c.Add(k1, test1)
 	log.Printf("缓存内存 %v", c.Len())
